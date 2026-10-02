@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>For My Love ❤️</title>
+    <title>To My Babby ❤️</title>
 
     <style>
         * {
@@ -15,29 +15,32 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
             font-family: Georgia, serif;
             text-align: center;
             color: white;
         }
 
-        .message {
-            background: rgba(0, 0, 0, 0.35);
+        .welcome {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box, .letter {
+            background: rgba(0, 0, 0, 0.45);
             padding: 30px;
-            border-radius: 20px;
+            border-radius: 25px;
             margin: 20px;
         }
 
         h1 {
-            font-size: 42px;
+            font-size: 34px;
         }
 
         p {
-            font-size: 19px;
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         button {
@@ -49,16 +52,76 @@
             color: white;
             font-size: 17px;
         }
+
+        .letter {
+            display: none;
+            max-height: 90vh;
+            overflow-y: auto;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="message">
-        <h1>Hey baby ❤️</h1>
-        <p>I made something special just for you...</p>
-        <button>Open it 💌</button>
+    <div class="welcome" id="welcome">
+        <div class="box">
+            <h1>To my babby 🥹❤️</h1>
+            <p>I made something special just for you...</p>
+            <button onclick="openLetter()">Open me 💌</button>
+        </div>
     </div>
+
+    <div class="letter" id="letter">
+
+        <h1>Happy Boyfriend’s Day to my babyyyy 🥹❤️</h1>
+
+        <p>
+            I honestly don't even know where to start because I have so much I
+            want to say to you. I'm genuinely so grateful that I get to call you
+            mine. You’ve brought so much love, happiness and comfort into my
+            life, and I appreciate you more than I probably say.
+        </p>
+
+        <p>
+            I love the way you care for me, the way you’re patient with me,
+            reassure me, make me laugh and always make me feel loved. I love all
+            our little moments, our random conversations, our jokes, the way we
+            miss each other and even the silly things we do. 🥹❤️
+        </p>
+
+        <p>
+            You’ve become such a special part of my life, and I really hope you
+            know how much you mean to me. I’m so grateful for everything we have
+            and for every memory we’re making together. I wouldn't trade what we
+            have for anything.
+        </p>
+
+        <p>
+            Sooo… this little website is a gift from me to you 🥹🎁❤️. It may
+            not be the actual gift because there’s something else coming soon 🤭,
+            but I wanted to give you something that you could keep and come back
+            to whenever you want a reminder of how much I love and appreciate you.
+        </p>
+
+        <p>
+            I hope you love it, babyyy. You deserve to feel loved, appreciated
+            and celebrated—not just today, but every day. 🥹❤️
+        </p>
+
+        <p>
+            Happy Boyfriend’s Day, my love. I love you sooo muchhh, my babbyyy.
+            ❤️🥹🫶🏽
+        </p>
+
+    </div>
+
+    <script>
+        function openLetter() {
+            document.getElementById("welcome").style.display = "none";
+            document.getElementById("letter").style.display = "block";
+        }
+    </script>
 
 </body>
 </html>
